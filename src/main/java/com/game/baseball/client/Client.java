@@ -20,7 +20,7 @@ public class Client {
 
     public static void main(String[] args) throws Exception {
         WebSocketContainer container = ContainerProvider.getWebSocketContainer();
-        container.connectToServer(Client.class, URI.create("ws://localhost:8025/game"));
+        container.connectToServer(Client.class, URI.create("wss://fd82-122-46-32-72.ngrok-free.app/game"));
 
         Scanner scanner = new Scanner(System.in);
         while (true) {
